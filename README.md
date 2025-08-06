@@ -17,7 +17,7 @@ A lightweight and visually engaging cross-platform desktop application that mimi
 
 ## 📸 Preview
 
-![Sticky Notes App Screenshot](Sticky Notes.png) <!-- Replace this with your own screenshot -->
+![Sticky Notes App Screenshot](Sticky Notes.png)
 
 ## 🚀 Getting Started
 
