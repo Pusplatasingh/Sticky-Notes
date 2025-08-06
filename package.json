@@ -1,14 +1,14 @@
 {
   "name": "sticky-notes",
   "version": "1.0.0",
-  "description": "",
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "script.js",
+  "description": "Sticky Notes Desktop App",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron ."
   },
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
   "devDependencies": {
     "electron": "^37.2.6"
   }
