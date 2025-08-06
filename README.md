@@ -87,13 +87,3 @@ Some parts of this project were built with assistance from AI tools like ChatGPT
 ## 📝 License
 
 This project is licensed under the MIT License.
-
-```
-
----
-
-Let me know if you want:
-- A real screenshot to embed
-- A `package.json` ready for Electron
-- Or the above exported as a `.md` file directly.
-```
