@@ -1,0 +1,188 @@
+body {
+  font-family: 'Comic Sans MS', 'Marker Felt', 'Segoe Print', sans-serif;
+  margin: 20px;
+  background: #f5f5f5 url('https://www.transparenttextures.com/patterns/notebook.png');
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.buttons {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+button, select {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+}
+
+button:hover, select:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+#notesContainer {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  border: 1px solid #ddd;
+  background: #fff url('https://www.transparenttextures.com/patterns/cork-board.png');
+  overflow: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Base Note Styling */
+.note {
+  position: absolute;
+  width: 220px;
+  min-height: 200px;
+  padding: 15px;
+  box-sizing: border-box;
+  cursor: move;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  animation: noteAppear 0.5s ease-out;
+  overflow: hidden;
+}
+
+.note:hover {
+  transform: rotate(1deg) scale(1.02);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+.note::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(135deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 50%);
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-family: 'Comic Sans MS', 'Marker Felt', 'Segoe Print', sans-serif;
+  background: transparent;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.colorPicker {
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.controlButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.controlButtons button {
+  font-size: 12px;
+  padding: 5px 8px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.7);
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.quote {
+  font-size: 12px;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 5px;
+}
+
+/* Note Shapes */
+.note.rectangle {
+  border-radius: 2px;
+  background: linear-gradient(135deg, #fffb8f 0%, #fff9a8 100%);
+}
+
+.note.circle {
+  border-radius: 50%;
+  padding: 25px;
+  width: 250px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: radial-gradient(circle, #fffb8f 0%, #fff9a8 100%);
+}
+
+.note.cloud {
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  background: linear-gradient(135deg, #f8f8f8 0%, #e8e8e8 100%);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.note.blob {
+  border-radius: 70% 30% 60% 40% / 60% 40% 60% 40%;
+  background: linear-gradient(135deg, #b5ead7 0%, #c7ceea 100%);
+}
+
+/* Animation */
+@keyframes noteAppear {
+  0% {
+    transform: scale(0.8) rotate(-5deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+  }
+}
+
+/* Sticky Tape Effect */
+.note::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 15px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .note {
+    width: 180px;
+    min-height: 160px;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+}

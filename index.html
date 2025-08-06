@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sticky Notes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>📝 Sticky Notes</h1>
+
+  <div class="buttons">
+    <select id="shapeSelect">
+      <option value="rectangle">📄 Rectangle</option>
+      <option value="cloud">☁️ Cloud</option>
+      <option value="circle">⭕ Circle</option>
+      <option value="blob">🎨 Blob</option>
+    </select>
+    <button id="addNoteBtn">Add Note</button>
+    <button id="clearAllBtn">Clear All</button>
+  </div>
+
+  <div id="notesContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
