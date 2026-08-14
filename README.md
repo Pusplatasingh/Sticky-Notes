@@ -4,16 +4,16 @@ A lightweight and visually engaging cross-platform desktop application that mimi
 
 ## ✨ Features
 
-- 📝 Add unlimited sticky notes
-- 🎨 Choose note shapes: rectangle, circle, cloud, blob
-- 🖍️ Pick custom background colors
-- 💡 Each note shows a random motivational quote
-- ✏️ Edit and save notes in-place
-- 🗑️ Delete individual notes or clear all at once
-- 📦 Data saved using `localStorage` for persistence
-- 🖱️ Drag notes anywhere inside the container
-- 🧠 Lightweight, minimal, and productivity-focused
-- ⚡ Packaged as a cross-platform Electron desktop app
+- 📝 Add unlimited sticky notes.
+- 🎨 Choose note shapes: rectangle, circle, cloud, blob.
+- 🖍️ Pick custom background colors.
+- 💡 Each note shows a random motivational quote.
+- ✏️ Edit and save notes in-place.
+- 🗑️ Delete individual notes or clear all at once.
+- 📦 Data saved using `localStorage` for persistence.
+- 🖱️ Drag notes anywhere inside the container.
+- 🧠 Lightweight, minimal, and productivity-focused.
+- ⚡ Packaged as a cross-platform Electron desktop app.
 
 ## 📸 Preview
 
@@ -84,6 +84,3 @@ Some parts of this project were built with assistance from AI tools like ChatGPT
 **Pusplata Singh**
 🔗 [GitHub Profile](https://github.com/Pusplatasingh)
 
-## 📝 License
-
-This project is licensed under the MIT License.
